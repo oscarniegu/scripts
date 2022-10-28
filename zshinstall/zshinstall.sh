@@ -3,7 +3,7 @@
 paru -S --needed git zsh fzf ttf-meslo-nerd-font-powerlevel10k
 
 # instalar oh my zsh
-#sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 
 #tema porwerlevel10k
