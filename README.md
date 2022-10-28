@@ -1,4 +1,2 @@
 # scripts
-# scripts
-# scripts
-# scripts
+para linux
