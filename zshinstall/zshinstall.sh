@@ -1,6 +1,6 @@
 ! /usr/bin/bash
 
-paru -S --needed git zsh fzf ttf-meslo-nerd-font-powerlevel10k
+paru -S --needed git fzf ttf-meslo-nerd-font-powerlevel10k
 
 # instalar oh my zsh
 #sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
