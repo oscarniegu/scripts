@@ -13,14 +13,17 @@ sed -ier 's/plugins=(git)/plugins=(git sudo fzf zsh-completions zsh-autosuggesti
 echo 'alias zshconfig="nano ~/.zshrc"' >> ~/.zshrc
 echo 'alias ls="lsd"' >> ~/.zshrc
 echo 'alias la="lsd -la"' >> ~/.zshrc
+echo 'alias cat="bat"' >> ~/.zshrc
 echo "export EDITOR='nano'" >> ~/.zshrc
 sudo chsh -s /bin/zsh "$CUR_USER"
 
 #complementos
 
-git clone https://github.com/zsh-users/zsh-autosuggestions "${ZSH_CUSTOM:-~/.oh-my-zsh/custom}"/plugins/zsh-autosuggestions
-git clone https://github.com/zsh-users/zsh-completions "${ZSH_CUSTOM:=~/.oh-my-zsh/custom}"/plugins/zsh-completions
-git clone https://github.com/zsh-users/zsh-syntax-highlighting.git "${ZSH_CUSTOM:-~/.oh-my-zsh/custom}"/plugins/zsh-syntax-highlighting
-git clone --depth 1 -- https://github.com/marlonrichert/zsh-autocomplete.git "${ZSH_CUSTOM:-~/.oh-my-zsh/custom}"/plugins/zsh-autocomplete
+git clone --depth=1 https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/plugins/zsh-autosuggestions
+git clone --depth=1 https://github.com/zsh-users/zsh-completions ~/.oh-my-zsh/custom/plugins/zsh-completions
+git clone --depth=1 https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
+git clone --depth 1 -- https://github.com/marlonrichert/zsh-autocomplete.git ~/.oh-my-zsh/custom/plugins/zsh-autocomplete
 
 exec zsh
+
+
